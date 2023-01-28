@@ -12,20 +12,19 @@ a {
 
 /* Header styles */
 header {
-  background-color: #1a1a1a;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #030202d1;
+    color: #f0f0f0;
 }
 
 header h1 {
-  margin: 0;
+    font-size: 3.5rem;
+    text-shadow: 3px 3px #cebe03c9;
 }
 
 /* Navigation styles */
-nav {
-  background-color: #f2f2f2;
-}
+
 
 nav ul {
   list-style-type: none;
@@ -35,17 +34,49 @@ nav ul {
   justify-content: center;
 }
 
-nav li {
+
+nav {
+  font-size: 20px;
+  font-weight: bold;  
+  color: #fff;
+  background-color: #18181897;
 }
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  padding: 1rem;
+}
+
+nav ul li:hover {
+  background-color: #222;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #ddd;
+}
+
+nav .active {
+  color: #ddd;
+}
+
 
 /* Main styles */
 main {
-  padding: 20px;
+  padding: 2rem;
 }
 
 /* Section styles */
 section {
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 section h2 {
@@ -149,7 +180,7 @@ form {
   border-bottom-left-radius: 1rem;
   display: flex;
   flex-direction: column;
-  padding: 3rem;
+  padding: 2rem;
   padding-bottom: 1rem;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
@@ -160,7 +191,7 @@ form {
 }
 
 .resume-builder form > div {
-  width: 100%;
+  width: -webkit-fill-available;
 }
 
 /* Form inputs */
@@ -169,11 +200,11 @@ input[type="email"],
 input[type="tel"],
 input[type="date"],
 textarea {
-  width: 100%;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+  width: inherit;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  border: 1px dashed #ccc;
   background: transparent;
   color: rgba(255, 255, 255, 0.8);
 }
@@ -214,8 +245,6 @@ input[type="submit"]:hover {
 
 /* Heading styling */
 h1 {
-  font-size: 36px;
-  margin-top: 50px;
 }
 
 /* Paragraph styling */
@@ -265,7 +294,7 @@ img {
 .resume-builder__sidebar {
   background-color: #eee;
   color: #222;
-  padding: 20px;
+  padding: 2rem;
   width: 50%;
   flex-grow: 1;
   border-bottom-right-radius: 1rem;
@@ -401,38 +430,4 @@ section#contact a:hover {
   background: #005580;
   color: #fff;
   text-decoration: none;
-}
-
-nav {
-  font-size: 20px;
-  font-weight: bold;
-  background-color: #333;
-  color: #fff;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-}
-
-nav ul li {
-  padding: 1rem;
-}
-
-nav ul li:hover {
-  background-color: #222;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-}
-
-nav a:hover {
-  color: #ddd;
-}
-
-nav .active {
-  color: #ddd;
-  border-bottom: 2px solid #fff;
 }
