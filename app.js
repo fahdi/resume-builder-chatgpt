@@ -1,6 +1,6 @@
 // Get form elements
 const form = document.getElementById("contact-form");
-if(form.length > 0) {
+if (form) {
   const name = document.getElementById("name");
   const email = document.getElementById("email");
   const message = document.getElementById("message");
@@ -8,7 +8,6 @@ if(form.length > 0) {
   // Listen for form submit
   form.addEventListener("submit", (e) => {
     e.preventDefault();
-
 
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
@@ -35,3 +34,33 @@ if(form.length > 0) {
       });
   });
 }
+
+
+
+  // array of image URLs
+  // Get the container element where the images will be displayed
+  const contactImgContainer = document.getElementById("image-container");
+
+  console.log(contactImgContainer);
+  if (contactImgContainer) {
+  console.log("Aaa ja re");
+    // Create an array of image URLs
+    const images = [
+      "/images/contact-monkey-2.webp",
+      "/images/contact-monkey.webp",
+      "/images/contact-monkey-3.webp",
+    ];
+
+    // Function to randomly select an image from the array
+    const randomImage = () => {
+      // Generate a random index between 0 and the number of images in the array
+      const randomIndex = Math.floor(Math.random() * images.length);
+      // Return the image URL at the randomly generated index
+      return images[randomIndex];
+    };
+
+    console.log(randomImage);
+
+    // Set the container's background image to a random image on page load
+    contactImgContainer.style.backgroundImage = `url(${randomImage()})`;
+  }
