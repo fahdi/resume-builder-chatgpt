@@ -1,0 +1,121 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #1A1A1A;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+/* Main styles */
+main {
+    padding: 20px;
+}
+
+/* Section styles */
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+/* Pricing section styles */
+section#pricing {
+    text-align: center;
+}
+
+section#pricing a {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #1A1A1A;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+
+#contact {
+    width: 500px;
+}
+
+/* Form container */
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;    
+}
+
+/* Form inputs */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Form label */
+label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Form submit button */
+input[type="submit"] {
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Form submit button on hover */
+input[type="submit"]:hover {
+    background-color: #3E8E41;
+}
