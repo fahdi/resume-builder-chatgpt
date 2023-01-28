@@ -81,16 +81,19 @@ footer {
     min-height: 500px;
     background-size: 100%;
     background-position: 10%;
-    border-radius: 2rem;
+    border-radius: 1rem;
 }
 
 #contact {
     width: 100%;
+    
 }
 
 /* Form container */
 
-form {
+form { 
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -111,6 +114,8 @@ textarea {
     margin-bottom: 1rem;
     border-radius: 5px;
     border: 1px solid #ccc;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.8)
 }
 
 textarea {
