@@ -1,47 +1,125 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Resume Builder</title>
-    <link rel="stylesheet" type="text/css" href="app.css">
-  </head>
-  <body>
-    <header>
-      <h1>Resume Builder</h1>
-    </header>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <main>
-      <section id="about">
-        <h2>About</h2>
-        <p>Our resume builder allows you to easily create a professional resume in minutes. With various templates to choose from and the ability to customize each section, you can create a resume that stands out and effectively showcases your skills and experience.</p>
-      </section>
-      <section id="features">
-        <h2>Features</h2>
+
+<head>
+  <title>Resume Builder</title>
+  <link rel="stylesheet" type="text/css" href="app.css">
+</head>
+
+<body>
+  <header>
+    <h1>Resume Builder</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="/contact" class="active">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="resume-builder">
+      <div class="resume-builder__header">
+        <h1>Resume Builder</h1>
+      </div>
+      <div class="resume-builder__sidebar">
         <ul>
-          <li>Various templates to choose from</li>
-          <li>Customizable sections</li>
-          <li>Easy to use interface</li>
-          <li>PDF and Word export options</li>
+          <li><a href="#personal-info">Personal Info</a></li>
+          <li><a href="#work-experience">Work Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
         </ul>
-      </section>
-      <section id="pricing">
-        <h2>Pricing</h2>
-        <p>Our resume builder is available for a low monthly subscription fee. Sign up now and start creating your professional resume today.</p>
-        <a href="#signup">Sign Up</a>
-      </section>
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>For more information or to ask any question, please contact us at contact@resumebuilder.com</p>
-      </section>
-    </main>
-    <footer>
-      <p>Copyright © 2023 Resume Builder</p>
-    </footer>
-  </body>
+      </div>
+      <div class="resume-builder__main-content">
+        <form id="resume-form">
+          <div class="personal-info" id="personal-info">
+            <h2>Personal Info</h2>
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="full-name">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div class="work-exp-container" id="work-exp-container">
+            <h2>Work Experience</h2>
+            <div class="work-experience__item">
+              <label for="company-name">Company Name</label>
+              <input type="text" id="company-name" name="company-name">
+              <label for="job-title">Job Title</label>
+              <input type="text" id="job-title" name="job-title">
+              <label for="start-date">Start Date</label>
+              <input type="date" id="start-date" name="start-date">
+              <label for="end-date">End Date</label>
+              <input type="date" id="end-date" name="end-date">
+              <label for="job-description">Job Description</label>
+              <textarea id="job-description" name="job-description"></textarea>
+            </div>
+            <button type="button" id="add-work-experience">Add Work Experience</button>
+          </div>
+
+          <div class="education-container" id="education-container">
+            <h2>Education</h2>
+            <div class="education__item">
+              <label for="school-name">School Name</label>
+              <input type="text" id="school-name" name="school-name">
+              <label for="degree">Degree</label>
+              <input type="text" id="degree" name="degree">
+              <label for="field-of-study">Field of Study</label>
+              <input type="text" id="field-of-study" name="field-of-study">
+              <label for="graduation-date">Graduation Date</label>
+              <input type="date" id="graduation-date" name="graduation-date">
+            </div>
+            <button type="button" id="add-education">Add Education</button>
+          </div>
+
+          <div class="skills-container" id="skills-container">
+            <h2>Skills</h2>
+            <div class="skills__item">
+              <label for="skill">Skill</label>
+              <input type="text" id="skill" name="skill">
+            </div>
+            <button type="button" id="add-skill">Add Skill</button>
+          </div>
+
+          <button type="submit">Create Resume</button>
+        </form>
+      </div>
+    </div>
+
+
+    <section id="about">
+      <h2>About</h2>
+      <p>Our resume builder allows you to easily create a professional resume in minutes. With various templates to
+        choose from and the ability to customize each section, you can create a resume that stands out and effectively
+        showcases your skills and experience.</p>
+    </section>
+    <section id="features">
+      <h2>Features</h2>
+      <ul>
+        <li>Various templates to choose from</li>
+        <li>Customizable sections</li>
+        <li>Easy to use interface</li>
+        <li>PDF and Word export options</li>
+      </ul>
+    </section>
+    <section id="pricing">
+      <h2>Pricing</h2>
+      <p>Our resume builder is available for a low monthly subscription fee. Sign up now and start creating your
+        professional resume today.</p>
+      <a href="#signup">Sign Up</a>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>For more information or to ask any question, please contact us at contact@resumebuilder.com</p>
+    </section>
+  </main>
+  <footer>
+    <p>Copyright © 2023 Resume Builder</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+
 </html>

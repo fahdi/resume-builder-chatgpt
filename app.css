@@ -86,23 +86,28 @@ footer {
 
 #contact {
     width: 100%;
-    
+
 }
 
 /* Form container */
 
-form { 
+form {
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
     display: flex;
-    flex-direction: column;
-    align-items: left;
-    width: 40%;
+    flex-direction: row;
     padding: 3rem;
     padding-bottom: 2rem;
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: difference;
     color: white;
+    justify-content: flex-start;
+}
+
+form > div {
+    width: 50%;
+    padding: 2rem;
+    flex-grow: unset;
 }
 
 /* Form inputs */
@@ -141,4 +146,129 @@ input[type="submit"] {
 /* Form submit button on hover */
 input[type="submit"]:hover {
     background-color: #3E8E41;
+}
+
+
+/* About Page */
+
+/* General styling */
+#about-page {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Heading styling */
+h1 {
+    font-size: 36px;
+    margin-top: 50px;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+/* Image styling */
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+/* Layout styling */
+.about-us-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us-img img {
+    width: 50%;
+    max-width: 300px;
+}
+
+
+/* Resume Builder container */
+.resume-builder {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* Resume Builder header */
+.resume-builder__header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Resume Builder sidebar */
+.resume-builder__sidebar {
+    background-color: #34495e;
+    color: #fff;
+    padding: 20px;
+    width: 200px;
+}
+
+/* Resume Builder sidebar links */
+.resume-builder__sidebar a {
+    color: #fff;
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+/* Resume Builder main content */
+.resume-builder__main-content {
+    background-color: #fff;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+/* Form inputs */
+input,
+textarea {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* Form labels */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Add button */
+button[type="button"] {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Create Resume button */
+button[type="submit"] {
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+hr {
+    width: 100%;
+    align-self: center;
+    border: none;
+    border-top: 1px dotted rgba(255,255, 255, 0.6);
+    margin: 1rem 0;
 }
