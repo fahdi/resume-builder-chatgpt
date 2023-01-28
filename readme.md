@@ -2,7 +2,7 @@
 
 This is a web application that allows users to create, edit and download professional resumes. It was built using modern web technologies such as HTML, CSS, JavaScript, Node.js, Express, MongoDB, and various APIs. The project was initiated by fahdi and was assisted by ChatGPT, an AI language model by OpenAI.
 
-![Web/AI based Resume Builder](resume-builder.jpeg)
+![Web/AI based Resume Builder](images/resume-builder.jpeg)
 
 ## Features
 
